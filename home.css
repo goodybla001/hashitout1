@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    transition: .3s;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.mediafire.com/convkey/5ca5/92xvlb22qvvpoub6g.jpg') center;
+    background-size: cover;
+}
+
+
+.heroText{
+    text-align: center;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.heroText h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+.heroText button{
+    color: #fff;
+    background: transparent;
+    border: solid 2px #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.heroText button:hover{
+    cursor: pointer;
+    background: #fff;
+    border: solid 2px #fff;
+    color: #333;
+}
+
+button.joinNow{
+    background: rgb(0, 206, 93);
+    border: solid 2px rgb(0, 206, 93);
+}
+
+button.joinNow:hover{
+    color: #fff;
+    background: rgb(1, 168, 76);
+    border: solid 2px rgb(1, 168, 76);
+}
