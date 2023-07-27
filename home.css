@@ -17,20 +17,41 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
-    background: url('https://www.mediafire.com/convkey/5ca5/92xvlb22qvvpoub6g.jpg') center;
-    background-size: cover;
+  
+}
+video{
+    position: fixed;
+    right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+   
+    z-index: -1;
+    height: 100%;
 }
 
-
 .heroText{
-    text-align: center;
+   
     color: #fff;
     margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.heroText2{
+    
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .heroText h1{
+    font-size: 3em;
+    margin: 0;
+}
+.heroText2 h1{
     font-size: 3em;
     margin: 0;
 }
