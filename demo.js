@@ -43,3 +43,25 @@ if ('geolocation' in navigator) {
 } else {
   console.error('Geolocation is not available in this browser.');
 }
+function initMap() {
+  const mapIframe = document.getElementById('mapIframe');
+  mapIframe.style.opacity = 1; // Show the iframe (remove the opacity style)
+
+  // Get the user's current position
+  navigator.geolocation.getCurrentPosition(
+    position => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      // Create a map centered at the user's location
+      const map = new google.maps.Map(mapIframe, {
+        center: { lat: latitude, lng: longitude },
+        zoom: 14, // You can adjust the zoom level as needed
+        disableDefaultUI: true, // Optional: Hide default map controls
+      });
+    },
+    error => {
+      console.error('Error getting user location:', error);
+    }
+  );
+}

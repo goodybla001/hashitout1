@@ -1,144 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>level1project</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>level1project</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="documentation.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="basic.css">
 </head>
+
 <body>
-    
-    <!--Nav Bar-->
-  <header class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+  <script src="documentation.js"></script>
+  <!--Nav Bar-->
+  <header >
+    <div class="top-0 container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center" >
+      <a class="flex title-font font-medium items-center mb-4 md:mb-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 bg-green-500  text-white rounded-full"
           viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-        <span class="ml-3 text-xl">JalNetr</span>
+        <span class="bodyHeading font-bold ml-3 text-xl">JaalNetr</span>
       </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a href="home.html" class="mx-1">
+      <div class="md:ml-auto flex font-bold flex-wrap items-center text-base justify-center">
+        <a href="home.html" class="navButton mx-1">
           <button
-            class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Home</button>
+            class="bodyHeading inline-flex font-bold items-center  border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Home</button>
         </a>
 
-        <a href="demo.html" class="mx-1">
+        <a href="demo.html" class="navButton mx-1">
           <button
-            class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Demo</button>
+            class="bodyHeading inline-flex font-bold items-center  border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Demo</button>
         </a>
 
-        <a href="download.html" class="mx-1">
+        <a href="download.html" class="navButton mx-1">
           <button
-            class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Download</button>
+            class="bodyHeading inline-flex font-bold items-center  border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Download</button>
         </a>
 
-        <a href="documentation.html" class="mx-1">
+        <a href="documentation.html" class="navButton mx-1">
           <button
-            class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Documentation</button>
+            class="bodyHeading inline-flex font-bold items-center border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Documentation</button>
         </a>
 
-        <a href="help.html" class="mx-1">
+        <a href="help.html" class="navButton mx-1">
           <button
-            class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Help</button>
+            class="bodyHeading inline-flex font-bold items-center  border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Help</button>
         </a>
-
-      </nav>
-    </div>
-  </header>
-
-    <!--Documentation Section-->
-    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="-my-8 divide-y-2 divide-gray-800">
-            <div class="py-8 flex flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-white">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-white title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-green-400 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+        <label>
+          <input type="checkbox" class="slider" onclick="myFunction()">
+          <div class="switch">
+            <div class="suns"></div>
+            <div class="moons">
+              <div class="star star-1"></div>
+              <div class="star star-2"></div>
+              <div class="star star-3"></div>
+              <div class="star star-4"></div>
+              <div class="star star-5"></div>
+              <div class="first-moon"></div>
             </div>
-            <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-white">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+            <div class="sand"></div>
+            <div class="bb8">
+              <div class="antennas">
+                <div class="antenna short"></div>
+                <div class="antenna long"></div>
               </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-white title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-green-400 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+              <div class="head">
+                <div class="stripe one"></div>
+                <div class="stripe two"></div>
+                <div class="eyes">
+                  <div class="eye one"></div>
+                  <div class="eye two"></div>
+                </div>
+                <div class="stripe detail">
+                  <div class="detail zero"></div>
+                  <div class="detail zero"></div>
+                  <div class="detail one"></div>
+                  <div class="detail two"></div>
+                  <div class="detail three"></div>
+                  <div class="detail four"></div>
+                  <div class="detail five"></div>
+                  <div class="detail five"></div>
+                </div>
+                <div class="stripe three"></div>
               </div>
-            </div>
-            <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-white">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+              <div class="ball">
+                <div class="lines one"></div>
+                <div class="lines two"></div>
+                <div class="ring one"></div>
+                <div class="ring two"></div>
+                <div class="ring three"></div>
               </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-white title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-green-400 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
+        </label>
+        <script>
+          function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+          }
+        </script>
+      </div>
+    </div>
+  </header>
+  <!--Screen-->
+
+  <!--Documentation Section-->
+  
+  <!--Technology used-->
+  <section>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
         </div>
-      </section>
-    <!--Footer-->
-    <footer class="text-gray-400 bg-gray-900 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="bodyHeading text-xl title-font font-medium mb-2">Atheros chipset Wi-Fi modem</h2>
+          <p class="leading-relaxed text-base text-justify">An Atheros chipset Wi-Fi modem is a network adapter that utilizes Atheros communication chips to enable wireless connectivity. Atheros chipsets are well-regarded for their reliability and performance, making these modems suitable for various devices like laptops, desktops, routers, and other Wi-Fi enabled devices.</p>
+          <a href="https://www.qualcomm.com/products/technology/wi-fi" target="_blank" class="mt-3 text-green-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-            <span class="ml-3 text-xl">XYZ</span>
           </a>
-          <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 XYZ —
-            <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">HashItOut</a>
-          </p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a class="text-gray-400">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-400">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-400">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-400">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-          </span>
         </div>
-    </footer>
+      </div>
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="bodyHeading text-xl title-font font-medium mb-2">Raspberry Pi</h2>
+          <p class="leading-relaxed text-base text-justify">Raspberry Pi is a popular, credit card-sized single-board computer developed to promote computer science education and DIY projects. It offers various models with different capabilities, running on Linux-based operating systems. With its GPIO pins and diverse add-ons, Raspberry Pi is widely used for home automation, robotics, media centers, and more.</p>
+          <a href="https://www.raspberrypi.org/" target="_blank" class="mt-3 text-green-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="bodyHeading text-xl title-font font-medium mb-2">Wifite</h2>
+          <p class="leading-relaxed text-base text-justify">Wifite is a powerful and automated wireless network auditing tool used for testing and securing Wi-Fi networks. It combines various attack techniques to crack WEP, WPA, and WPA2 passwords, making it a valuable asset for network security professionals.</p>
+          <a href="https://www.kali.org/tools/wifite/" target="_blank" class="mt-3 text-green-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="bodyHeading text-xl title-font font-medium mb-2">Wireshark</h2>
+          <p class="leading-relaxed text-base text-justify">Wireshark is a widely-used network protocol analyzer that captures and examines data packets on a network. It allows users to analyze and troubleshoot network issues, inspect traffic for security threats, and gain valuable insights into network communication.</p>
+          <a href="https://www.wireshark.org/" target="_blank" class="mt-3 text-green-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="bodyHeading text-xl title-font font-medium mb-2">HashCat</h2>
+          <p class="leading-relaxed text-base text-justify">HashCat is a renowned password cracking tool designed to recover lost or forgotten passwords through brute-force, dictionary, and hybrid attacks. It supports a vast range of algorithms and can efficiently crack hashes from various applications and operating systems, aiding security audits and penetration testing.</p>
+          <a href="https://hashcat.net/hashcat/" target="_blank" class="mt-3 text-green-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer class="relative absolute inset-x-0 bottom-0 h-8 ">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 bg-green-500  text-white rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="bodyHeading font-bold ml-3 text-xl">JaalNetr</span>
+      </a>
+      <p class="bodyHeading text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 KAVACH
+        —
+        <a href="" class="bodyHeading ml-1" target="_blank"
+          rel="noopener noreferrer">HashItOut</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a>
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 ">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
 </body>
+
 </html>

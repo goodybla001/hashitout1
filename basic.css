@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    color: #718096; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  body .bodyHeading {
+    color: #1a202c;
+  }
+  .dark-mode {
+    background-color: rgb(38, 38, 38);
+    color: rgb(189, 189, 189);
+
+  }
+
+  .dark-mode .navButton:hover {
+    background-color: #4a5568;/* text-gray-700*/
+    display: inline-flex;
+    align-items: center;
+    border: 0;
+    border-radius: 0.25rem;
+    /* You can adjust the padding values as needed */
+    outline: none;
+
+    /* You can adjust the border radius as needed */
+
+    /* You can adjust the font size as needed */
+
+    /* You can adjust the margin values as needed */
+
+
+  }
+
+  .dark-mode .bodyHeading {
+    color: #f7fafc;
+  }
+
+  .footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    /* Position the footer at the bottom */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
