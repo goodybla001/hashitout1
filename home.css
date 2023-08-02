@@ -48,11 +48,9 @@ video {
   background-size: cover;
 }
 
-.heroSection :hover{
+/* .heroSection :hover{
     /* background-color: #fff;
-    filter: opacity(60%); */
-    
-}
+    filter: opacity(60%); }*/
 
 .heroText{
     text-align: center;
