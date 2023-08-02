@@ -22,13 +22,16 @@ button{
     
      /* To hide any overflowing video content */
 }
-.navBar {
+/* .navBar {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    /* Add any styling for your navigation bar here */
-  }
+    background-image: url("https://pe-images.s3.amazonaws.com/basics/cc/gradients/essentials/gradient-reversed.jpg");
+    background-size: cover;
+    z-index: -20;
+    /* Add any styling for your navigation bar here 
+  } */
 video {
     /* object-fit: cover; */
     width: 100%;

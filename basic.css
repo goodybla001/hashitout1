@@ -1,11 +1,28 @@
 body {
     background-color: white;
+    z-index: -11;
     color: #718096; 
     display: flex;
     flex-direction: column;
     min-height: 100%;
   }
-
+  .navBar {
+    position: fixed; /* Changed 'absolute' to 'fixed' for a more appropriate navigation bar behavior */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-image: url("https://pe-images.s3.amazonaws.com/basics/cc/gradients/essentials/gradient-reversed.jpg"); */
+    /* background-size: cover; Ensures the background image covers the entire navigation bar */
+    /* Adjusted z-index to a positive value so the navigation bar stays above other elements */
+    /* Add any additional styling for your navigation bar here */
+    /* For example, you can set the height, padding, text styles, etc. */
+    /* height: 60px;
+    padding: 10px; */
+    /* color: white;
+    font-size: 16px;
+    text-align: center; */
+  }
+  
   body .bodyHeading {
     color: #1a202c;
   }
