@@ -7,13 +7,38 @@
   <link rel="stylesheet" href="help.css">
   <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="basic.css">
+  <style>
+    .accordion {
+      
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc;
+      color: #fff;
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      
+      overflow: hidden;
+    }
+    </style>
 </head>
 
 <body>
   <script src="help.js"></script>
   <!--Nav Bar-->
   <header>
-    <div class="top-0 left-0 container mx-auto flex flex-wrap p-1  z-index: -10; flex-col md:flex-row items-center">
+    <div class="navBar top-0 left-0 container mx-auto flex flex-wrap p-1  flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center mb-4 md:mb-0">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
           stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 bg-green-500  text-white rounded-full"
@@ -44,9 +69,9 @@
             class="bodyHeading inline-flex font-bold items-center border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Documentation</button>
         </a>
 
-        <a href="help.html" class="navButton mx-1">
+        <a href="ContactUs.html" class="navButton mx-1">
           <button
-            class="bodyHeading inline-flex font-bold items-center  border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Help</button>
+            class="bodyHeading inline-flex font-bold items-center  border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0">Contact Us</button>
         </a>
         <label>
           <input type="checkbox" class="slider" onclick="myFunction()">
@@ -107,8 +132,6 @@
   </header>
   <!--Screen-->
   <!--Accordion-->
-  <h2>Accordion</h2>
-
 <button class="accordion">Section 1</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -123,7 +146,22 @@
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
-
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
 
 
 
@@ -255,7 +293,7 @@
             class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
             <img alt="team"
               class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 grayscale hover:grayscale-0 opacity-50 hover:opacity-100"
-              src="https://media.licdn.com/dms/image/D4D03AQH4ddnmAZpjaw/profile-displayphoto-shrink_800_800/0/1687070753436?e=1695859200&v=beta&t=SS-ojQXguL4wZynZTBxSdOduqVTRTxTzKYj1UtqjiEo">
+              src="https://media.licdn.com/dms/image/D4D03AQGk3__j0jlhJQ/profile-displayphoto-shrink_800_800/0/1690957625947?e=1696464000&v=beta&t=x5qvF0mVcNNuD_tdc8OzNP_c-tkDPFjJMS1VAy_ZQ8M">
             <div class="flex-grow sm:pl-8">
               <h2 class="bodyHeading title-font font-medium text-lg">Nandini Tiwari</h2>
               <h3 class="text-gray-500 font-small mb-3">BTech CSE</h3>

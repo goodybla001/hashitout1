@@ -7,7 +7,7 @@ body {
     min-height: 100%;
   }
   .navBar {
-    position: fixed; /* Changed 'absolute' to 'fixed' for a more appropriate navigation bar behavior */
+    /* position: fixed; Changed 'absolute' to 'fixed' for a more appropriate navigation bar behavior */
     top: 0;
     left: 0;
     right: 0;
@@ -25,6 +25,7 @@ body {
   
   body .bodyHeading {
     color: #1a202c;
+    
   }
   .dark-mode {
     background-color: rgb(38, 38, 38);
