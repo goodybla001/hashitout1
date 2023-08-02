@@ -23,7 +23,7 @@
           viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-        <span class="bodyHeading font-bold ml-3 text-xl">JaalNetr</span>
+        <span class="bodyHeading font-bold ml-3 text-xl">JaalNetra</span>
       </a>
       <div class="md:ml-auto flex font-bold flex-wrap items-center text-base justify-center">
         <a href="home.html" class="navButton mx-1">
@@ -109,31 +109,52 @@
   </header>
   <!--Screen-->
 
-<video class="w-full" autoplay muted controls>
-  <source src="" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  <video class="w-full" id="loadingButton1" muted controls>
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 
   <!--Button for screen -->
   <div class="startbutton flex-wrap">
     <div class="demoScreenButton">
-      <button id="toggleButton" type="button"
-        class="button-style hover:text-white hover:bg-green-800 focus:ring-1 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Start</button>
-
-      <button id="loadingButton" hidden disabled type="button"
-        class="button-style text-white border-white focus:outline-none bg-indigo-400 cursor-not-allowed focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 hover:bg-indigo-300 hover:cursor-not-allowed">
-        <span class="h-5 w-5 mx-2 border-t-transparent border-solid animate-spin rounded-lg
+      <button id="toggleButton" type="button" onclick="myFunction1()"
+        class="button-style hover:text-white flex hover:bg-green-800 focus:ring-1 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Start</button>
+      <div id="loadingButton" style="display:none" class="flex inline-block">
+        <button hidden disabled type="button"
+          class="button-style text-white border-white focus:outline-none bg-indigo-400 cursor-not-allowed focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 hover:bg-indigo-300 hover:cursor-not-allowed">
+          <span class="h-5 w-5 mx-2 border-t-transparent border-solid animate-spin rounded-lg
              border-white border-4"></span>
-        Processing... </button>
+          Processing... </button>
 
 
-      <button id="loadingButton" hidden disabled type="button"
-        class="button-style hover:text-white focus:outline-none hover:bg-red-800 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Abort</button>
+        <button hidden type="button" onclick="myFunction2()"
+          class="button-style hover:text-white focus:outline-none hover:bg-red-800 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Abort</button>
+      </div>
     </div>
 
   </div>
-
+  <script>
+    function myFunction1() {
+      var tb1 = document.getElementById("toggleButton");
+      var lb1 = document.getElementById("loadingButton");
+      var lb2 = document.getElementById("loadingButton1");
+      lb1.style.display = "flex";
+      tb1.style.display = "none";
+      lb2.style.display = "autoplay";
+    }
+  </script>
+  
+  <script>
+    function myFunction2() {
+      var tb1 = document.getElementById("toggleButton");
+      var lb1 = document.getElementById("loadingButton");
+      var lb2 = document.getElementById("loadingButton1");
+      lb1.style.display = "none";
+      tb1.style.display = "inline-block";
+      lb2.style.display = "false";
+    }
+  </script>
   </header>
   <!--Demo page-->
   <!--Statistics-->
@@ -146,12 +167,11 @@
           viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-        <span class="bodyHeading font-bold ml-3 text-xl">JaalNetr</span>
+        <span class="bodyHeading font-bold ml-3 text-xl">JaalNetra</span>
       </a>
       <p class="bodyHeading text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 KAVACH
         —
-        <a href="" class="bodyHeading ml-1" target="_blank"
-          rel="noopener noreferrer">HashItOut</a>
+        <a href="" class="bodyHeading ml-1" target="_blank" rel="noopener noreferrer">HashItOut</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <a>
