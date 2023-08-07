@@ -35,7 +35,7 @@ button{
 video {
     /* object-fit: cover; */
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     filter: contrast(.4);
     top: 0;
@@ -59,16 +59,18 @@ video {
     text-align: center;
     color: #fff;
     margin-top: 0px;
-    max-width: 70%; /* Adjust the width as per your preference */
+    max-width: 100%; /* Adjust the width as per your preference */
   margin: 0 auto; /* To center the content horizontally */
   line-height: 1.6;
+  
   /* background-color: #f7fafc; */
 }
 
 
 .heroText h1{
-    font-size: 4em;
+    font-size: 3em;
     margin: 0;
+    padding-bottom: 2;
 }
 .heroText h2{
     font-size: 2em;
