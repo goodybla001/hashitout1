@@ -34,7 +34,7 @@ button{
   } */
 video {
     /* object-fit: cover; */
-    width: 100%;
+    width: 150%;
     height: 100vh;
     position: absolute;
     filter: contrast(.4);
